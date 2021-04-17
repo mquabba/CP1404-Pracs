@@ -1,19 +1,10 @@
-"""
-CP1404/CP5632 - Practical
-Answer the following questions:
-1. When will a ValueError occur? The error will occur when ??
-2. When will a ZeroDivisionError occur?
-3. Could you change the code to avoid the possibility of a ZeroDivisionError?
-Change the code, therefore answer has to be greater than 0
-"""
-
 try:
-    numerator = int(input("Enter the numerator: "))
-    denominator = int(input("Enter the denominator: "))
+    numerator = int(input("Enter numerator: "))
+    denominator = int(input("Enter denominator: "))
     fraction = numerator / denominator
     print(fraction)
 except ValueError:
-    print("Numerator and denominator must be valid numbers!")
+    print("Numerator and denominator must be valid a number!")
 except ZeroDivisionError:
-    print("Cannot divide by zero!")
+    print("Number must be greater than zero!")
 print("Finished.")
